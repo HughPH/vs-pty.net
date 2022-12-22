@@ -27,6 +27,11 @@
       <PrivateAssets>all</PrivateAssets>
     </ProjectReference>
   </ItemGroup>
+  
+  <ItemGroup>
+    <PackageReference Update="MicroBuild.VisualStudio" Version="2.0.61" />
+    <PackageReference Remove="Nerdbank.GitVersioning" />
+  </ItemGroup>
 
   <Target Name="CollectNugetFiles" BeforeTargets="_GetPackageFiles">
     <ItemGroup>
